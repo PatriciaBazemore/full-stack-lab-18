@@ -1,0 +1,15 @@
+
+
+ <h1>Single View</h1>  
+
+<div id="chirp-list">
+        <div class="chirp">
+          
+        <p>{{ chirp.message }}</p>
+        <h4>{{ chirp.userName }}</h4>
+        <h5>{{ chirp.timestamp | date: 'short'}}</h5>
+        <div class="button-block">
+         <button class="fancy-button" ng-click="editChirp()">Edit</button>
+         <button class="fancy-button red" ng-click="deleteChirp()">Delete</button>
+        </div>
+        
